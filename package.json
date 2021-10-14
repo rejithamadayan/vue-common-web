@@ -2,12 +2,16 @@
   "name": "vue-web-components",
   "version": "0.1.0",
   "private": true,
+  "main": "main.js",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "build": "npm run build:wc",
+    "lint": "vue-cli-service lint",
+    "build:lib": "vue-cli-service build --target lib --name test-web-components src/main.js",
+    "build:wc": "vue-cli-service build --target wc --name dxc-components src/components/*.vue"
   },
   "dependencies": {
+    "@vue/web-component-wrapper": "^1.3.0",
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
   },
