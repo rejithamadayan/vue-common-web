@@ -2,15 +2,28 @@
   <div class="web-card">
     <h3>{{ title }}</h3>
     <p>{{ sub }}</p>
+    <b-button variant="success" @click="textStr = 'Clicked me'"
+      >Submit</b-button
+    >
+    <p>{{ textStr }}</p>
   </div>
 </template>
 
 <script>
+import { BButton } from "bootstrap-vue";
 export default {
   name: "WebCard",
+  components: {
+    BButton,
+  },
   props: {
     title: { type: String, default: "Web component title from vue" },
     sub: { type: String, default: "Web component sub title" },
+  },
+  data() {
+    return {
+      textStr: "",
+    };
   },
 };
 </script>
