@@ -5,6 +5,7 @@
     <b-button variant="success" @click="textStr = 'Clicked me'"
       >Submit</b-button
     >
+    <p>heloo testing</p>
     <p>{{ textStr }}</p>
   </div>
 </template>
