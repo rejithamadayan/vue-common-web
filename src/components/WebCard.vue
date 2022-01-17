@@ -9,7 +9,7 @@
     <p>{{ textStr }}</p>
   </div>
 </template>
-
+<script src="https://unpkg.com/vue"></script>
 <script>
 import { BButton } from "bootstrap-vue";
 export default {
